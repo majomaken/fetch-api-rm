@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+$primary-color: rgba(255, 255, 255, 0.477);
+$primary-font: "Roboto", sans-serif;
+$title-font: "Sixtyfour Convergence", sans-serif;
+
+.container {
+  font-family: $primary-font;
+  display: flex;
+  background-color: red;
+  flex-direction: column;
+
+  h1 {
+    font-family: $title-font;
+    color: $primary-color;
+  }
+
+  .list {
+    display: flex;
+  }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+$primary-color: rgba(255, 255, 255, 0.477);
+$primary-font: "Roboto", sans-serif;
+$title-font: "Sixtyfour Convergence", sans-serif;
+$normal-font-size: 1rem;
+
+.container {
+  font-family: $primary-font;
+  display: flex;
+  max-width: 100%;
+  background-color: rgb(175, 229, 227);
+  flex-direction: column;
+
+  h1 {
+    font-family: $title-font;
+    color: $primary-color;
+  }
+
+  .button {
+    width: 20%;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    flex-direction: row;
+
+    .character {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+
+      img {
+        width: 60px;
+        font-size: $normal-font-size;
+      }
+    }
+  }
+}
